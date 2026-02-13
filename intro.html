@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Intro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Change intro.mp4 to your real video file name -->
+    <video class="fullscreen-video" id="introVideo" autoplay muted playsinline>
+        <source src="intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // After 4 seconds, go back to main.html
+        setTimeout(function () {
+            window.location.href = "home.html";
+        }, 4000); // 4000 ms = 4 seconds
+    </script>
+</body>
+</html>
