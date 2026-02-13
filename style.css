@@ -1,0 +1,184 @@
+/* style.css */
+
+body {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Fullscreen video on intro page */
+.fullscreen-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main page content */
+.main-content {
+    padding: 40px;
+}body {
+    margin: 0;
+    padding: 0;
+    /* Nice subtle blue gradient background */
+    background-image: linear-gradient(135deg, #e6f0ff 0%, #f7f9ff 40%, #ffffff 100%);
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+.page {
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 20px auto;
+    background: #ffffff;              /* keep content on clean white */
+    display: grid;
+    grid-template-columns: 32% 68%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
+
+
+/* Optional: reduce inner padding so more content fits */
+.right-column {
+    padding: 20px 24px;
+}
+
+.left-column {
+    padding: 20px;
+}
+
+.photo-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #ccc;
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Focus more on the top part (face) */
+    object-position: center 20%;
+}
+
+
+.block {
+    margin-bottom: 25px;
+}
+
+.block h2 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #222;
+}
+
+.block p,
+.block li {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 4px 0;
+}
+
+.block ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+/* Right column */
+.right-column {
+    padding: 25px 30px;
+}
+
+/* Header */
+.header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin: 4px 0;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 13px;
+    color: #555;
+}
+
+/* Experience & education items */
+.item {
+    margin-bottom: 18px;
+}
+
+.item h3 {
+    font-size: 14px;
+    margin: 0 0 4px;
+}
+
+.item .meta {
+    font-size: 12px;
+    color: #666;
+    margin: 0 0 6px;
+}
+
+.item ul {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.item li {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+/* Links */
+a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page {
+        grid-template-columns: 1fr;
+    }
+    .left-column {
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+}
+/* Particle background layer */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;                 /* behind the main card */
+    background-image: linear-gradient(135deg, #e6f0ff 0%, #f7f9ff 40%, #ffffff 100%);
+}
+
+/* Page card on top (keep your previous styles) */
+.page {
+    max-width: 1100px;
+    min-height: 100vh;
+    margin: 20px auto;
+    background: #ffffff;
+    display: grid;
+    grid-template-columns: 32% 68%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 8px;
+}
